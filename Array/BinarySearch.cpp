@@ -8,7 +8,7 @@ int mid = start + (end-start)/2;
 
 while(start<=end){
     if(arr[mid]==key){
-        return key;
+        return mid;
     }
 
     if(arr[mid]<key){

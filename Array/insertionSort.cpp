@@ -11,18 +11,25 @@ void printArray(int arr[], int size)
     cout << endl;
 }
 
-void selectionSort(int arr[], int size)
+void insertionSort(int arr[], int size)
 {
-    for (int i = 1; i < size; i++)
+    for (int i = 1; i < size; i++) // No. of rounds
     {
-        int minIndex = i;
+        int temp = arr[i];
+        int j = i - 1;
 
-        for (int j = i+1; j < size; j++)
+        for (; j >= 0; j--)
         {
-            if (arr[j] < arr[minIndex])
-                minIndex = j;
+            if (arr[j] > temp)
+            {
+                arr[j + 1] = arr[j];
+            }
+            else
+            {
+                break;
+            }
         }
-        swap(arr[minIndex], arr[i]);
+        arr[j+1] = temp;
     }
 }
 int main()
@@ -35,6 +42,6 @@ int main()
     {
         cin >> arr[i];
     }
-    selectionSort(arr, size);
+    insertionSort(arr, size);
     printArray(arr, size);
 }

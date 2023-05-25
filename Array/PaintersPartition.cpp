@@ -1,4 +1,4 @@
-#include<stdlib.h>
+/*#include<stdlib.h>
 #include<vector>
 bool ispossible(vector<int> &t; int n;int mid){
     int pincount=1;
@@ -49,4 +49,4 @@ int findLargestMinDistance(vector<int> &boards, int k)
        
    }
    return ans;
-}
+}*/

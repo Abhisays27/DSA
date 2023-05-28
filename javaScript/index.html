@@ -85,7 +85,17 @@
 // console.log(location.href);
 // console.log(location.pathname);
 // consle.log(location.protocal);
-console.log(navigator.appVersion)
+// console.log(navigator.appVersion)
+//to add a class through js
+window.addEventListener('scroll',()=>{
+    let navbar =  document.getElementById("menubar");
+    if(window.pageYOffset>=190){
+        navbar.classList.add('sticky')
+    }
+    else{
+        navbar.classList.remove('sticky');
+    }
+})
 
  
 

@@ -96,6 +96,34 @@ window.addEventListener('scroll',()=>{
         navbar.classList.remove('sticky');
     }
 })
+//Spread operartor
+let array1 = [1,2,3];
+let array2 = [2,4,6,...array1];
+
+//for-of
+let score = [80,39,70,54];
+for(let x of score){
+    console.log(x);
+}
+//Array Destructuring
+
+let book = ["advnaced js",200,150];
+let[name,page=500,price] = book;
+
+//object destructuring
+let book1 = {
+    name1:"advaned js1",
+    page1: 200,
+    price1:150,
+     
+    publication:{
+        pub_name:"ahi",
+        year:2021
+    }
+};
+
+let{name1:title,page1,price1,publication:{pub_name:pub,year}} = book;
+
 
  
 

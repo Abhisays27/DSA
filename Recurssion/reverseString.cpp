@@ -7,10 +7,7 @@ void Reverse(string& str,int i, int j){
     if(i>j)
     return;
     swap(str[i],str[j]);
-    i++;
-    j--;
-
-    Reverse(str,i,j);
+    Reverse(str,i+1,j-1);
     
 }
 int main()

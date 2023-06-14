@@ -11,7 +11,7 @@ int partition(int arr[],int s,int e){
         }
 
     }
-    //place at the index pos
+    //place at the index pos.
    int pivotIndex=s+count;
    swap(arr[s],arr[pivotIndex]);
 

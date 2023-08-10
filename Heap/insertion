@@ -1,0 +1,27 @@
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+
+// using namespace std;
+
+// int main() {
+//     vector<int> maxHeap;
+
+//     // Insert elements into the max-heap
+//     maxHeap.push_back(10);
+//     maxHeap.push_back(20);
+//     maxHeap.push_back(5);
+//     maxHeap.push_back(15);
+
+//     // Convert the vector into a max-heap
+//     make_heap(maxHeap.begin(), maxHeap.end());
+
+//     // Insert a new element into the max-heap
+//     maxHeap.push_back(25);
+//     push_heap(maxHeap.begin(), maxHeap.end());
+
+//     // Print the maximum element
+//     cout << "Maximum element: " << maxHeap.front() << endl;
+
+//     return 0;
+// }
